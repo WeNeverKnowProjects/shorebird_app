@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       title: 'Shorebird Flavor App',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.purple,
+          seedColor: Colors.deepPurple,
         ),
         useMaterial3: true,
       ),
