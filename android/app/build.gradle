@@ -51,16 +51,21 @@ android {
         versionName flutterVersionName
     }
 
-    flavorDimensions "track"
+    flavorDimensions "app"
     productFlavors{
-        internal{
-            dimension "track"
-            applicationIdSuffix ".internal"
-            manifestPlaceholders = [applicationLabel: "[Internal] Shorebird Example"]
+        dev{
+            dimension "app"
+            applicationIdSuffix ".dev"
+            manifestPlaceholders = [applicationLabel: "[DEV] Shorebird Flavor"]
         }
-        stable{
-            dimension "track"
-            manifestPlaceholders = [applicationLabel: "Shorebird Example"]
+        staging{
+            dimension "app"
+            applicationIdSuffix ".staging"
+            manifestPlaceholders = [applicationLabel: "[STAGING] Shorebird Flavor"]
+        }
+        prod{
+            dimension "app"
+            manifestPlaceholders = [applicationLabel: "Shorebird Flavor"]
         }
     }
 
