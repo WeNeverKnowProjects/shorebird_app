@@ -70,6 +70,10 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Text("Hi Customer"),
+            const SizedBox(
+              height: 50,
+            ),
             Center(
               child: Text("Base Url => ${AppEnvironment.url}"),
             ),
