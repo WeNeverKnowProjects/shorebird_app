@@ -71,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Center(
-              child: Text("BASE URL => ${AppEnvironment.url}"),
+              child: Text("Base Url => ${AppEnvironment.url}"),
             ),
             const SizedBox(
               height: 30,
