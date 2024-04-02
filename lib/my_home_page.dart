@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shorebird_flavor_app/app_environment.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
@@ -69,6 +70,12 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Center(
+              child: Text("Env => ${AppEnvironment.url}"),
+            ),
+            const SizedBox(
+              height: 30,
+            ),
             const Text(
               'You have pushed the button this many times:',
             ),
