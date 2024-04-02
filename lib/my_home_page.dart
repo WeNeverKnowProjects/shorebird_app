@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text("Hi Customer"),
+            const Text("Hello Customer"),
             const SizedBox(
               height: 50,
             ),
@@ -93,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add_box_rounded),
+        child: const Icon(Icons.add_circle),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
